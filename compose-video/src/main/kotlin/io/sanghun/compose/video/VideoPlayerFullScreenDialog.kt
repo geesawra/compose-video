@@ -99,9 +99,6 @@ internal fun VideoPlayerFullScreenDialog(
 
         LaunchedEffect(Unit) {
             PlayerView.switchTargetView(player, currentPlayerView, internalFullScreenPlayerView)
-
-            val currentActivity = context.findActivity()
-            currentActivity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         }
 
         val activityWindow = getActivityWindow()
